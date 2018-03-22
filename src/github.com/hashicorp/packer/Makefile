@@ -29,9 +29,9 @@ bin: deps ## Build debug/test build
 	@echo "WARN: 'make bin' is for debug / test builds only. Use 'make release' for release builds."
 	@sh -c "$(CURDIR)/scripts/build.sh"
 
-markbin: ## Build debug/test build
+standalone: ## Build debug/test build
 	@go get github.com/mitchellh/gox
-	@echo "WARN: 'make bin' is for debug / test builds only. Use 'make release' for release builds."
+	@echo "WARN: 'make stadalone' is for c2s builds only."
 	@sh -c "$(CURDIR)/scripts/build.sh"
 
 
