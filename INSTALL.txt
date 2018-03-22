@@ -1,0 +1,15 @@
+1. Clone c2s-packer into your desired install location.
+   git clone https://github.com/radiantbluetechnologies/c2s-packer
+2. Edit your .bashrc (or .cshrc) file and add GOPATH to your environment:
+   For bash: export GOPATH=<install location>
+   i.e. I cloned in /home/mkrutz and there is now a c2s-packer directory, so
+        I would do: export GOPATH=/home/mkrutz/c2s-packer in my .bashrc.
+3. This build process requires the golang rpm package to be installed. If it is
+   not installed do a 'sudo rpm install golang'
+4. Also add $GOPATH/bin to your $PATH environment variable
+5. cd <install-location>/c2s-packer
+6. Run the buildAll.sh script
+7. When the script finishes, your c2s usable packer executable will be in there
+   $GOPATH/bin directory.
+
+NOTE: This packer executable is NOT for use in the UNCLASSIFIED AWS environment!!!
