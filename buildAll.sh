@@ -5,4 +5,3 @@ cd ../../mitchellh/gox
 go build
 cd ../../hashicorp/packer
 make standalone
-~
