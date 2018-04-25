@@ -31,7 +31,7 @@ bin: deps ## Build debug/test build
 
 standalone: ## Build debug/test build
 	@go get github.com/mitchellh/gox
-	@echo "WARN: 'make stadalone' is for c2s builds only."
+	@echo "WARN: 'make standalone' is for c2s builds only."
 	@sh -c "$(CURDIR)/scripts/build.sh"
 
 
